@@ -1,0 +1,56 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/assets/images/login_bg.jpg') no-repeat center;
+    background-size: cover;/* 背景图片覆盖元素 */
+}
+
+.layui-main {
+    margin-top: 20px;
+}
+
+/* 
+    登录注册框
+*/
+.loginAndRegBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);/* 让盒子水平垂直居中 */
+}
+.title_box {
+    height: 60px;
+    background: url('/assets/images/login_title.png') no-repeat center;
+}
+.layui-form {
+    padding: 0 30px;
+}
+/* 字体图标样式 */
+.layui-form-item {
+    position: relative;
+}
+.layui-form-item .layui-icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.layui-input {
+    padding-left: 32px;
+}
+/* 功能切换样式 */
+#form_reg {
+    display: none;
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+.links a {
+    font-size: 12px;
+}
