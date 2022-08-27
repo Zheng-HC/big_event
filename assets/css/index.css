@@ -1,0 +1,50 @@
+/* 头像相关样式 */
+.user_info {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    user-select: none;
+    /* text-align: center; */
+}
+.layui-nav-img {
+    height: 40px;
+    width: 40px;
+}
+.text_avatar {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: #009688;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* 字体图标相关样式 */
+.layui-nav-child dd {
+    /* 将子项目往右移，显得层级分明 */
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+/* 主题内容区域样式 */
+iframe {
+    width: 100%;
+    height: 100%;
+}
+.layui-body {
+    overflow: hidden;
+}
+.layui-footer {
+    text-align: center;
+    font-size: 12px;
+}
