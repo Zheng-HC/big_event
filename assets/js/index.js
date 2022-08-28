@@ -9,7 +9,7 @@ function getUserInfo() {
         // },
         success: function (res) {
             if(res.status !== 0) return console.log(res)
-            console.log('res：', res);
+            // 拿到响应数据，渲染页面
             renderUserInfo(res.data)
         }
     })
@@ -18,15 +18,11 @@ getUserInfo()
 
 // 2. 渲染用户信息的函数
 function renderUserInfo(user) {
-    console.log('user:', user);
-    //{id: 23930, username: '```', nickname: '', email: '', user_pic: null}
-
     // 渲染用户名，优先获取昵称
     const name = user.nickname || user.username
     document.querySelector('.welcome').innerHTML = `欢迎&nbsp;&nbsp;${name}`
 
     // 渲染用户头像 优先渲染图片头像
-    console.log('user_pic:', user.user_pic);
     if (user.user_pic !== null) {
         //隐藏文字头像
         document.querySelectorAll('.text_avatar').forEach(function (item) {
