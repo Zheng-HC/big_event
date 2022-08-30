@@ -66,9 +66,7 @@ form_login.addEventListener('submit', function (ev) {
             localStorage.setItem('token', res.token)
             // 跳转到后台主页
             // 如果直接跳转的话，不会显示layer.msg，加个延时器，就可以正常显示layer.msg了
-            setTimeout(function(){
-                location.href = '/index.html'
-            }, 900)
+            location.href = '/index.html'
         }
     })
 })
